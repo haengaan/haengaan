@@ -174,7 +174,7 @@ def korean_age(birth_year):
 print(korean_age(1993))
 print('\n')
  
-""" 
+
 print('함수 연습 문제1: 단리 이자\n') 
 def simple_interest(p,r,t):
     interest = p*r*t
@@ -182,15 +182,62 @@ def simple_interest(p,r,t):
 
 print(simple_interest(1100000, 0.05, 5/12))
 
+print('\n')
  
+print('데이터 타입 연습 문제1: 회문 판별 함수 만들기\n')
+
+def palindrome(word):
+    if word == word[::-1] or word.lower() == word.lower()[::-1]:
+        print('True')
+#    elif word.lower() == word.lower()[::-1]:
+#        print('True')
+    else:
+        print('False')
  
+palindrome('anna')
+palindrome('banana')
+palindrome('Anna') 
+
+
+def palindrome(s):
+    s = s.lower()
+    s = s.replace(' ', '')
+    return s[:] == s[::-1]
+
+if __name__ == '__main__':
+    for x in ['anna', 'banana', 'Anna', 'My gym']:
+        if palindrome(x):
+            print(f"'{x}' is a panlindrome")
+        else:
+            print(f"'{x}' is not a palindrome")
  
- 
- 
- 
- 
- 
- 
+print('\n')
+
+###############
+print('문자열과 리스트 연습 문제1: 각 자리 숫자의 합을 구하는 함수(리스트를 이용)\n')
+
+
+for i in range(4, 8):
+    print(i)
+    
+    
+def sumOfDigits(n):
+    #num_str = str(n)
+    #result = 0
+    for i in range(0, 3):
+        #print(len(num_str))
+        print(i)
+        #result += int(num_str[i])
+       # print(result)
+        #return result
+    
+print(sumOfDigits(643))
+
+######################
+"""
+print('문자열과 리스트 연습 문제1: 각 자리 숫자의 합을 구하는 함수(리스트를 이용)\n')
+
+
  
  
  
